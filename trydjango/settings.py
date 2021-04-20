@@ -25,7 +25,7 @@ SECRET_KEY = '3hi5ix%#7n2c=#-0&b+=2snl3p8(_x0g@vh8^*g7&wib#0g$2+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['accd880cdfdd44e7adc4af42c8772cd0.vfs.cloud9.us-west-1.amazonaws.com']
 
 
 # Application definition
@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # third party
+    # own
+    'pages',
+    'products',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -47,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+  
 ]
 
 ROOT_URLCONF = 'trydjango.urls'
